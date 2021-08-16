@@ -12,9 +12,9 @@ I have a roll of transparent Prusament PETG. When printed it comes out looking l
 
 ![Lit](Images/lit.jpeg)
 
-While the A1200.net case is patterned on later model A1200 cases and uses 15mm rectangular holes for the LEDs, older A1200 cases used 14mm LED holes. It would maybe be possible to print light pipe pieces so that they could be turned over, with 14mm one side and 15mm the other? I have just printed 15mm be neat to make a double-sided 3D print that can be turned around for whatever case being used. I just made the 15mm set I need. 
+While the A1200.net case is patterned on later model A1200 cases and uses 15mm rectangular holes for the LEDs, older A1200 cases used 14mm LED holes. It would maybe be possible to print light pipe pieces so that they could be turned over, with 14mm one side and 15mm the other? I have just made two versions for now.
 
-The opaque plastic base aligns and holds the translucent pieces, and blocks the light from crossing from one LED to an adjacent one. There is a recess to allow the SMD components to fit under the translucent pieces. 
+The opaque plastic base aligns and holds the translucent pieces, and blocks the light from crossing from one LED to an adjacent one. There is a recess to allow the SMD component to fit under the translucent pieces. 
 
 ![Assembled](Images/assembled.jpeg)
 
