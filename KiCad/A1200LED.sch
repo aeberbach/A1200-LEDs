@@ -1,0 +1,135 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 60FF8FC3
+P 5200 2650
+F 0 "D1" H 5193 2395 50  0000 C CNN
+F 1 "GRN - POWER" H 5193 2486 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5200 2650 50  0001 C CNN
+F 3 "~" H 5200 2650 50  0001 C CNN
+	1    5200 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 60FF94A8
+P 5200 3250
+F 0 "D2" H 5193 2995 50  0000 C CNN
+F 1 "RED - FLOPPY" H 5193 3086 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5200 3250 50  0001 C CNN
+F 3 "~" H 5200 3250 50  0001 C CNN
+	1    5200 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 60FF9C41
+P 5200 3850
+F 0 "D3" H 5193 3595 50  0000 C CNN
+F 1 "ORANGE - HDD" H 5193 3686 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5200 3850 50  0001 C CNN
+F 3 "~" H 5200 3850 50  0001 C CNN
+	1    5200 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 60FFEBD2
+P 5900 2650
+F 0 "R1" V 5695 2650 50  0000 C CNN
+F 1 "180R" V 5786 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5940 2640 50  0001 C CNN
+F 3 "~" H 5900 2650 50  0001 C CNN
+	1    5900 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 60FFF06A
+P 5900 3250
+F 0 "R2" V 5695 3250 50  0000 C CNN
+F 1 "180R" V 5786 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5940 3240 50  0001 C CNN
+F 3 "~" H 5900 3250 50  0001 C CNN
+	1    5900 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 60FFF56D
+P 5900 3850
+F 0 "R3" V 5695 3850 50  0000 C CNN
+F 1 "180R" V 5786 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5940 3840 50  0001 C CNN
+F 3 "~" H 5900 3850 50  0001 C CNN
+	1    5900 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 2650 6050 2650
+Wire Wire Line
+	6350 3250 6050 3250
+Connection ~ 6350 3250
+Wire Wire Line
+	6350 3250 6350 2650
+Wire Wire Line
+	6350 3850 6050 3850
+Wire Wire Line
+	6350 3850 6350 3250
+Wire Wire Line
+	5350 2650 5750 2650
+Wire Wire Line
+	5350 3250 5750 3250
+Wire Wire Line
+	5350 3850 5750 3850
+Wire Wire Line
+	5050 2650 4300 2650
+Wire Wire Line
+	4300 2650 4300 4600
+Wire Wire Line
+	4300 4600 7000 4600
+Wire Wire Line
+	5050 3250 4450 3250
+Wire Wire Line
+	4450 3250 4450 4500
+Wire Wire Line
+	4450 4500 7000 4500
+Wire Wire Line
+	5050 3850 4600 3850
+Wire Wire Line
+	4600 3850 4600 4400
+Wire Wire Line
+	4600 4400 7000 4400
+Text Notes 7250 1900 0    50   ~ 0
+LEDS are 2.2V 20mA, Vss = 5V R = (Vss - Vled) / I ... R = 2.8 / 0.015 ... R = 180
+Connection ~ 6350 3850
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 610D3A3B
+P 7200 4500
+F 0 "J1" H 7172 4382 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 7172 4473 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7200 4500 50  0001 C CNN
+F 3 "~" H 7200 4500 50  0001 C CNN
+	1    7200 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 4300 7000 4300
+Wire Wire Line
+	6350 3850 6350 4300
+$EndSCHEMATC
